@@ -1,0 +1,371 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Users need to be able to request particular forecast metrics",
+    "line": 1,
+    "id": "users-need-to-be-able-to-request-particular-forecast-metrics",
+    "tags": [],
+    "uri": "features/sainsburys_api_forecast_metric.feature",
+    "elements": [
+      {
+        "id": "users-need-to-be-able-to-request-particular-forecast-metrics;specify-forecast-metric",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Specify forecast metric",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a request is made to the API",
+            "match": {
+              "location": "features/support/steps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "specific forecast metrics are provided in the request and any combination of weather metrics is provided",
+            "match": {
+              "location": "features/support/steps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "only the provided weather metrics must be returned",
+            "match": {
+              "location": "features/support/steps.js:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 834000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "users-need-to-be-able-to-request-particular-forecast-metrics;specify-temperature-format",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Specify temperature format",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "a request is made to the API",
+            "match": {
+              "location": "features/support/steps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the \"temperature format\" is provided in the request and it is \"C\" or it is \"F\"",
+            "match": {
+              "location": "features/support/steps.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "correct temperature format for all temperatures in the forecast must be returned",
+            "match": {
+              "location": "features/support/steps.js:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1467000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "users-need-to-be-able-to-request-particular-forecast-metrics;specify-wind-speed-format",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Specify wind speed format",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "a request is made to the API",
+            "match": {
+              "location": "features/support/steps.js:57"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "the \"wind speed format\" is provided in the request and it is \"K\" or it is \"M\"",
+            "match": {
+              "location": "features/support/steps.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "correct wind speed format kph or mph for all wind speeds in the forecast must be returned",
+            "match": {
+              "location": "features/support/steps.js:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1660000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Users need to be able to search for weather for a city",
+    "line": 1,
+    "id": "users-need-to-be-able-to-search-for-weather-for-a-city",
+    "tags": [],
+    "uri": "features/sainsburys_api_search.feature",
+    "elements": [
+      {
+        "id": "users-need-to-be-able-to-search-for-weather-for-a-city;search-for-weather-for-a-valid-city",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Search for weather for a valid city",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I want to search for the weather for a particular city",
+            "match": {
+              "location": "features/support/steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I provide a valid city",
+            "match": {
+              "location": "features/support/steps.js:25"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I receive a response with the weather details for the requested city",
+            "match": {
+              "location": "features/support/steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 710000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "users-need-to-be-able-to-search-for-weather-for-a-city;search-for-weather-for-an-invalid-city",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Search for weather for an invalid city",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I want to search for the weather for a particular city",
+            "match": {
+              "location": "features/support/steps.js:20"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I provide an invalid city",
+            "match": {
+              "location": "features/support/steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I receive a 404 response with the message \"No matching city found\"",
+            "match": {
+              "location": "features/support/steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Users need to be able to request short-form weather or particular forecast metrics",
+    "line": 1,
+    "id": "users-need-to-be-able-to-request-short-form-weather-or-particular-forecast-metrics",
+    "tags": [],
+    "uri": "features/sainsburys_api_shortform_weather.feature",
+    "elements": [
+      {
+        "id": "users-need-to-be-able-to-request-short-form-weather-or-particular-forecast-metrics;specify-short-term-weather-request",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Specify short-term weather request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a request is made to the API",
+            "match": {
+              "location": "features/support/steps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "\"short\" is provided in the request",
+            "match": {
+              "location": "features/support/steps.js:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "only the weather description, min, max and current temperatures are returned",
+            "match": {
+              "location": "features/support/steps.js:132"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1426000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "users-need-to-be-able-to-request-short-form-weather-or-particular-forecast-metrics;specify-number-of-days",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Specify number of days",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "a request is made to the API",
+            "match": {
+              "location": "features/support/steps.js:57"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "\"number of days\" is provided in the request and is less than 7 and greater than 0",
+            "match": {
+              "location": "features/support/steps.js:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "weather metrics for the specified number of days must be returned",
+            "match": {
+              "location": "features/support/steps.js:155"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 748000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
