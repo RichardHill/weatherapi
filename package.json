@@ -1,7 +1,7 @@
 {
   "name": "interviewtest",
   "version": "1.0.0",
-  "description": "An interview test for Sainsburys PLC",
+  "description": "An interview test for Sunrays PLC",
   "main": "index.js",
   "scripts": {
     "test": "node server.js & ./node_modules/.bin/cucumber-js -f json:testing/reporting/cucumber_report.json",

@@ -1,4 +1,4 @@
-Sainsburys Interview Test
+Sunrays Interview Test
 ======================
 
 * Node JS
